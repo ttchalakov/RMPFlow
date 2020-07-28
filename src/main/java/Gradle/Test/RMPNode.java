@@ -73,15 +73,18 @@ public class RMPNode {
 			RMPNode child = children.get(i);
 			SimpleMatrix J_child = child.j.of(x); //child's Jacobian of x
 			SimpleMatrix J_dot_child = child.j_dot.of(x, x_dot);
+			System.out.println("x\n" + x.toString()
+				+ "x_dot\n" + x_dot.toString());
 			
 			if(child.f != null && child.name != null)
 			{
 				//Jdot(f-M*J*dot*x)
-				f = f.plus(J_child.transpose().mult(
-						child.f.minus(
-								child.m.mult(J_dot_child)
-								.mult(x_dot)
-								)));
+				f = f.plus(J_child.transpose().mult(child.f.minus(
+								child.m.mult(J_dot_child).mult(x_dot))));
+				System.out.println("f+\n" + f.toString());
+				System.out.println("J_child.transpose()\n" + J_child.transpose().toString()
+						+ "J_dot_child" + J_dot_child.toString()
+						+ "");
 				//f += np.dot(J_child.T , (child.f - np.dot(
 				//		np.dot(child.M, J_dot_child), self.x_dot)));
 				m = m.plus(J_child.transpose().mult(child.m).mult(J_child));

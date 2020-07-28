@@ -36,7 +36,7 @@ public abstract class RMPLeaf extends RMPNode{
 	public static SimpleMatrix eye(int size)
 	{
 		SimpleMatrix eye = new SimpleMatrix(size, size);
-		for(int i = size; i < size; i++)
+		for(int i = 0; i < size; i++)
 		{
 			eye.set(i , i, 1);
 		}

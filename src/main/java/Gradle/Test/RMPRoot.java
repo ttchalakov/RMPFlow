@@ -37,11 +37,11 @@ public class RMPRoot extends RMPNode{
 	
 	public SimpleMatrix resolve()
 	{
-		System.out.println("A\n"+ m.toString());
-		System.out.println(f.toString());
+		System.out.println("m\n"+ m.toString());
+		System.out.println("f\n" + f.toString());
 		a = m.pseudoInverse().mult(f);
 		//self.a = np.dot(np.linalg.pinv(self.m), self.f);
-		System.out.println(a.toString());
+		System.out.println("A\n" + a.toString());
 		return a;
 	}
 	

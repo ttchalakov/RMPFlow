@@ -16,9 +16,11 @@ public class RMPFlowTester {
 //		System.out.println("C * D = \n" + c.mult(d).toString());
 		
 		//RMP_example
+		SimpleMatrix xyGoal = new SimpleMatrix(1, 2, false, new double[] {-2.5, 0});
 		RMPRoot r = new RMPRoot("root");
 		CollisionAvoidance collisionAvoidance = new CollisionAvoidance("Collision Avoidance Test"
 				, r, new SimpleMatrix(1, 2), 1, .2, 1e-5, 0);
+		GoalAttractor goalAttractor = new GoalAttractor("Goal Attractor Test", r, xyGoal, 10, 1, 1, 1, 2, 1, .005);
 		
 		SimpleMatrix x = new SimpleMatrix(1, 2, false, new double[] {8, -3.2});
 		SimpleMatrix x_dot = new SimpleMatrix(1, 2, false, new double[] {-1, 2});
