@@ -9,4 +9,5 @@ Collision Avoidance RMP
 Goal Attractor RMP
 
 Example:
+
 ![Test Image 4](https://github.com/ttchalakov/RMPFlow/blob/master/example/CollisionAvoidance.png)
