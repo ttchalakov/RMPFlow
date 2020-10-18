@@ -8,6 +8,8 @@ Includes:
 Collision Avoidance RMP
 Goal Attractor RMP
 
-Example:
+Example: 
 
 ![Test Image 4](https://github.com/ttchalakov/RMPFlow/blob/master/example/CollisionAvoidance.png)
+
+(Robot starts at the bottom and avoids the obstacles as it is attracted to the top)
