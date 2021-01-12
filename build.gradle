@@ -27,6 +27,6 @@ dependencies {
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
     
-    //EJML Linear Algebra Library
-    compile group: 'org.ejml', name: 'ejml-all', version: '0.39'
+    //EJML
+    compile group: 'org.ejml', name: 'ejml-all', version: '0.40'
 }
