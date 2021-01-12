@@ -1,4 +1,4 @@
-package Gradle.Test;
+package RMPFlow;
 
 import java.awt.Color;
 import java.awt.Graphics;

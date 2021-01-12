@@ -1,4 +1,4 @@
-package Gradle.Test;
+package RMPFlow;
 import java.util.ArrayList;
 
 import org.ejml.simple.SimpleMatrix;

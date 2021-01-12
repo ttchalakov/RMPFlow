@@ -1,4 +1,4 @@
-package Gradle.Test;
+package RMPFlow;
 
 import java.util.function.BiFunction;
 import java.util.function.Function;
